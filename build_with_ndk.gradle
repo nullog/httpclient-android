@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle-experimental:0.2.0'
+        compile 'com.android.tools.build:gradle-experimental:0.8.0-alpha2'
     }
 }
 
@@ -17,7 +17,7 @@ def isReleaseBuild() {
 model {
     android {
         compileSdkVersion = 23
-        buildToolsVersion = "23.0.1"
+        buildToolsVersion = "23.0.3"
 
         defaultConfig.with {
             minSdkVersion.apiLevel = 3
